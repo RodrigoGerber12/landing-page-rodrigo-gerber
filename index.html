@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Rodrigo Gerber</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background-color: #16213e;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00d4ff;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section,
+    aside {
+      background-color: white;
+      margin-bottom: 25px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    section h2,
+    aside h2 {
+      color: #1e3c72;
+      margin-bottom: 15px;
+      border-left: 5px solid #2a5298;
+      padding-left: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .projetos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    article {
+      background-color: #f0f4ff;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #d6e0ff;
+    }
+
+    article h3 {
+      color: #16213e;
+      margin-bottom: 10px;
+    }
+
+    aside a {
+      color: #1e3c72;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #16213e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 700px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .projetos {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Rodrigo Gerber</h1>
+    <p>Estudante de Análise e Desenvolvimento de Sistemas em busca de evolução na tecnologia.</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre mim</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#extras">Extras</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+
+      <p>
+        Meu nome é Rodrigo Gerber, sou estudante de Análise e Desenvolvimento de Sistemas.
+        Tenho interesse em desenvolvimento web, tecnologia, criação de soluções digitais e
+        melhoria contínua. Estou desenvolvendo meus conhecimentos em HTML, CSS, lógica de
+        programação e construção de páginas responsivas.
+      </p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+
+      <ul>
+        <li>HTML semântico</li>
+        <li>CSS básico e responsivo</li>
+        <li>Lógica de programação</li>
+        <li>Organização de conteúdo para páginas web</li>
+        <li>Noções de desenvolvimento front-end</li>
+        <li>Comunicação e atendimento ao cliente</li>
+      </ul>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+
+      <div class="projetos">
+
+        <article>
+          <h3>Projeto 1: Página de Portfólio</h3>
+
+          <p>
+            Desenvolvimento de uma página pessoal com informações profissionais,
+            habilidades, projetos e formas de contato, utilizando HTML e CSS puro.
+          </p>
+        </article>
+
+        <article>
+          <h3>Projeto 2: Site para Empresa Local</h3>
+
+          <p>
+            Projeto fictício de um site institucional para uma empresa, com apresentação
+            dos serviços, identidade visual simples e layout responsivo para celular.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <aside id="extras">
+      <h2>Informações Extras</h2>
+
+      <p>
+        Além da tecnologia, gosto de games, marketing digital, criação de conteúdo e aprendizado
+        constante. Também tenho interesse em desenvolver projetos que unam criatividade e solução
+        de problemas.
+      </p>
+
+      <p>
+        Links úteis:
+        <br>
+
+        <a href="https://github.com/RodrigoGerber12" target="_blank">
+          GitHub
+        </a>
+        |
+        <a href="https://www.linkedin.com/in/rodrigothomazgerber/" target="_blank">
+          LinkedIn
+        </a>
+        |
+        <a href="https://www.instagram.com/rodrigo.tgerber/" target="_blank">
+          Instagram
+        </a>
+      </p>
+    </aside>
+
+  </main>
+
+  <footer id="contato">
+    <p>Contato: rodrigotger@gmail.com</p>
+    <p>© 2026 Rodrigo Gerber. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
